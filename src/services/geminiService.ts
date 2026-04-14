@@ -140,7 +140,7 @@ Hãy trả lời một cách thân thiện và hữu ích!`;
   
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       contents: fullPrompt,
       config: {
         temperature: 0.7,
@@ -222,7 +222,7 @@ export const generateQuestionFromAI = async (
     }
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -261,7 +261,7 @@ export const performOCR = async (base64Data: string, mimeType: string): Promise<
     `;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       contents: {
         parts: [
           {
@@ -308,7 +308,7 @@ export const parseQuestionsFromMarkdown = async (markdownText: string, grade: nu
 
   try {
     const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
+        model: 'gemini-3-flash-preview',
         contents: prompt,
         config: {
             responseMimeType: 'application/json',
@@ -360,7 +360,7 @@ Lưu ý:
 `;
 
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
+            model: 'gemini-3-flash-preview',
             contents: prompt,
             config: {
                 responseMimeType: 'application/json',
