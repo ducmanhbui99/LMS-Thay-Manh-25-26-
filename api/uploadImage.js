@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
     // ✅ URL Apps Script của bạn
     const GOOGLE_SCRIPT_URL =
-      'https://script.google.com/macros/s/AKfycbwzuRnVJjSIL36hnwt-U0CrKTn15QU7qkGaarEL979_6lEnhbkN7IIG23y7PSvJeo3i/exec';
+      'https://script.google.com/macros/s/AKfycby37JoDGYDgxw2PVF93xxi-ZT5nu6sufC-sicMrRo3U4oHIAIo-TFva6_orbnEtkv4d_A/exec';
 
     // Forward sang Apps Script
     const upstream = await fetch(GOOGLE_SCRIPT_URL, {
